@@ -1,0 +1,3 @@
+.autopilot/
+__pycache__/
+*.pyc

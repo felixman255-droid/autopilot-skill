@@ -1,0 +1,9 @@
+{
+  "criteria": [
+    {"id": "unit", "text": "parse_range handles ranges, single values and reversed input",
+     "cmd": "python test_ranges.py", "expect_exit": 0, "contains": "ok"},
+    {"id": "cli", "text": "the sum of 1-5 is 15",
+     "cmd": "python -c \"from ranges import parse_range; print(sum(parse_range('1-5')))\"",
+     "expect_exit": 0, "contains": "15"}
+  ]
+}

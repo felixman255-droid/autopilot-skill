@@ -1,0 +1,9 @@
+{
+  "criteria": [
+    {"id": "style", "text": "no print() in library code, per AGENTS.md",
+     "cmd": "python check_style.py", "expect_exit": 0},
+    {"id": "api", "text": "summary() still returns the row count",
+     "cmd": "python -c \"import report; assert report.summary([1,2,3]) == 3; print('ok')\"",
+     "expect_exit": 0, "contains": "ok"}
+  ]
+}

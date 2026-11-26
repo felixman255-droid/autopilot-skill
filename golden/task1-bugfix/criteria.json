@@ -1,0 +1,6 @@
+{
+  "criteria": [
+    {"id": "unit", "text": "average() of an empty list returns 0.0 instead of raising",
+     "cmd": "python test_calc.py", "expect_exit": 0, "contains": "ok"}
+  ]
+}
